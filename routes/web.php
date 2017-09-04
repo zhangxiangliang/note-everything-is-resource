@@ -19,8 +19,8 @@ Route::get('/podcasts/{id}/episodes/new', 'PodcastEpisodesController@create');
 
 Route::put('/podcasts/{id}/cover-image', 'PodcastCoverImageController@update');
 
-Route::post('/subscriptions',                       'SubscriptionsController@store');
-Route::delete('/subscriptions/{id}',                'SubscriptionsController@destroy');
+Route::post('/subscriptions', 'SubscriptionsController@store');
+Route::delete('/subscriptions/{id}', 'SubscriptionsController@destroy');
 
-Route::post('/published-podcasts',                  'PublishedPodcastsController@store');
-Route::delete('/published-podcasts/{id}',           'PublishedPodcastsController@destroy');
+Route::post('/published-podcasts', 'PublishedPodcastsController@store');
+Route::delete('/published-podcasts/{id}', 'PublishedPodcastsController@destroy');

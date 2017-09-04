@@ -16,3 +16,11 @@ Route::patch('/episodes/{id}', 'EpisodesController@update');
 Route::get('/podcasts/{id}/episodes', 'PodcastEpisodesController@index');
 Route::post('/podcasts/{id}/episodes', 'PodcastEpisodesController@store');
 Route::get('/podcasts/{id}/episodes/new', 'PodcastEpisodesController@create');
+
+Route::put('/podcasts/{id}/cover-image', 'PodcastCoverImageController@update');
+
+Route::post('/subscriptions',                       'SubscriptionsController@store');
+Route::delete('/subscriptions/{id}',                'SubscriptionsController@destroy');
+
+Route::post('/published-podcasts',                  'PublishedPodcastsController@store');
+Route::delete('/published-podcasts/{id}',           'PublishedPodcastsController@destroy');
